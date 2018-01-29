@@ -32,8 +32,9 @@ dict_data2 = {
 # print(tabulate(list_data, showindex="always"))
 
 # # 换图表样式
-# print(tabulate(dict_data1, headers="keys",
-#                showindex="always", tablefmt="grid"))
+print("表格样式".center(20, '*'))  # 居中，(width, fillchar)->(字符串的总宽度，填充字符)
+print(tabulate(dict_data1, headers="keys",
+               showindex="always", tablefmt="grid"))
 # print(tabulate(dict_data1, headers="keys",
 #                showindex="always", tablefmt="fancy_grid"))
 # print(tabulate(dict_data1, headers="keys",
