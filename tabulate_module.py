@@ -11,10 +11,10 @@ list_data = [["Sun", 696000, 1989100000],
              ["Mars", 3390, 641.85]]
 dict_data1 = [{"name": "lin", "age": 22},
               {"name": "yao", "age": 22}]
-dict_data2 = {
-    "name": ["lin", "yao"],
-    "age": [22, 21]
-}
+# dict_data2 = {
+#     "name": ["lin", "yao"],
+#     "age": [22, 21]
+# }
 # table = np.array([["lin", "yao"],
 #                   [22, 22]]).T
 
