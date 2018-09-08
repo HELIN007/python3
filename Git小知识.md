@@ -1,10 +1,8 @@
 [TOC]
 
+# Git基本操作 #
 
-
-## Git基本操作 ##
-
-##### **==Git命令==** #####
+## **==Git命令==** ##
 
 > * `git log`：显示更改信息，`:q`退出`vim`，简单版`git log --oneline`；
 >
@@ -17,16 +15,16 @@
 > * `git diff —cached`：$add$ 之后想查看与未修改的不同；
 > * `git commit -am "内容"`：可以跳过 $add$ 直接 $commit$ 。
 
-##### ==忽略某些文件==#####
+### ==忽略某些文件== ###
 
 这样不会太混乱。
 
-> ```
+> ``` git
 > touch .gitignore
 > vim .gitignore
 > ```
 
-##### ==移除文件==#####
+#### ==移除文件== ####
 
 > ```python
 > # 只移除远程仓库的文件，保留本地文件
@@ -35,20 +33,20 @@
 > git push  # git push -u origin master
 > ```
 
-##### ==移动文件(修改名字)==#####
+##### ==移动文件(修改名字)== #####
 
 > ```python
 > git mv 原名 修改名
 > ```
 
-##### ==撤销上一次修改==#####
+##### ==撤销上一次修改== #####
 
 > ```python
 > # 想撤销修改某一文件时，好像只返回了上一次修改
 > git checkout -- name
 > ```
 
-##### ==reset所有状态都返回==#####
+##### ==reset所有状态都返回== #####
 
 > 假如修改某文件（a.py）之后将其 $add$ 进暂缓之后，想要返回非暂缓区：
 >
@@ -107,7 +105,7 @@ git checkout ***  # 切换分支
 # 新建并切换到分支***
 # git checkout -b ***
 git branch -d ***  # 删除分支(得切换到另外分支才能删除此分支)
-git merge --no-ff -m "保留merge信息" dev  # 不快速合并，并保留信息
+git merge --no-ff -m "保留merge信息" ***  # 不快速合并，并保留信息
 git branch -v  # 查看各个分支最后一个提交对象的信息
 git branch --merged  # 查看哪些分支已被并入当前分支，不带*的其实可以删掉，因为已经合并完了
 git branch --no-merged  # 显示还未合并进来的分支
@@ -150,6 +148,3 @@ git tag -d v1.0
 git tag -d v1.0
 git push origin :refs/tags/v1.0  # 固定句式，就改后面的版本号
 ```
-
-
-
